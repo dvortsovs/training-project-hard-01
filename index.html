@@ -6,13 +6,127 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css">
-  <title>Bycicles</title>
+  <title>Bicycles</title>
 </head>
 
 <body class="page">
-  <header class="header"></header>
-  <main class="main"></main>
-  <footer class="footer"></footer>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><button type="button" href="#" class="header__nav-button">Покрытия и
+            градиенты</button></li>
+        <li class="header__nav-item"><button type="button" href="#" class="header__nav-button">Велосипеды</button></li>
+        <li class="header__nav-item"><button type="button" href="#" class="header__nav-button">Тренировки</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="first-screen">
+      <h1 class="first-screen__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
+      <p class="first-screen__text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным
+        маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
+      <button type="button" class="button first-screen__button">Подробнее</button>
+      <p class="first-screen__bicycle-title">Cannondale Systemsix</p>
+      <div class="first-screen__bicycle"></div>
+    </section>
+    <section class="note">
+      <img src="" alt="" class="note__img">
+      <h2 class="note__title">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&mdash;
+        но&nbsp;катайся&raquo;</h2>
+      <p class="note__author"><span class="note__name">Эдди Меркс</span>Велогонщик</p>
+    </section>
+    <section class="road-slider swiper">
+      <h2 class="road-slider__title">Шоссе</h2>
+      <p class="road-slider__text">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах:
+        будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно
+        и&nbsp;самостоятельно.</p>
+      <ul class="road-slider__slider swiper-wrapper">
+        <li class="road-slider__slide swiper-slide"><img src="" alt="" class="roar-slider__image"></li>
+        <li class="road-slider__slide swiper-slide"><img src="" alt="" class="roar-slider__image"></li>
+        <li class="road-slider__slide swiper-slide"><img src="" alt="" class="roar-slider__image"></li>
+      </ul>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
+    <section class="bicycles swiper">
+      <h2 class="bicycles__title">Велосипеды</h2>
+      <div class="bicycles__road swiper-pagination"></div>
+      <ul class="bicycles__slider swiper-wrapper">
+        <li class="bicycles__slide bicycles__slide_highway swiper-slide">
+          <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN "
+            class="bicycles__bike">
+            <img src="" alt="" class="bicycles__bike-image">
+            <p class="bicycles__bike-title">Cervelo Caledonia-5</p>
+          </a>
+          <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+            class="bicycles__bike">
+            <img src="" alt="" class="bicycles__bike-image">
+            <p class="bicycles__bike-title">Cannondale Systemsix Himod</p>
+          </a>
+          <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+            class="bicycles__bike">
+            <img src="" alt="" class="bicycles__bike-image">
+            <p class="bicycles__bike-title">Trek Domane SL-7</p>
+          </a>
+        </li>
+        <li class="bicycles__slide bicycles__slide_graval swiper-slide">
+          <a href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE"
+            class="bicycles__bike">
+            <img src="" alt="" class="bicycles__bike-image">
+            <p class="bicycles__bike-title">Cervelo Aspero GRX 810</p>
+          </a>
+          <a href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9"
+            class="bicycles__bike">
+            <img src="" alt="" class="bicycles__bike-image">
+            <p class="bicycles__bike-title">Specialized S-Works Diverge</p>
+          </a>
+          <a href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8"
+            class="bicycles__bike">
+            <img src="" alt="" class="bicycles__bike-image">
+            <p class="bicycles__bike-title">Cannondale Topstone Lefty 3</p>
+          </a>
+        </li>
+        <li class="bicycles__slide bicycles__slide_tt swiper-slide">
+          <a href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
+            class="bicycles__bike">
+            <img src="" alt="" class="bicycles__bike-image">
+            <p class="bicycles__bike-title">Specialized S-Works Shiv</p>
+          </a>
+          <a href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835"
+            class="bicycles__bike">
+            <img src="" alt="" class="bicycles__bike-image">
+            <p class="bicycles__bike-title">BMC Timemachine 01 ONE</p>
+          </a>
+          <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q"
+            class="bicycles__bike">
+            <img src="" alt="" class="bicycles__bike-image">
+            <p class="bicycles__bike-title">Cervelo P-Series</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="traning">
+      <h2 class="tranong__title">Тренировки</h2>
+      <p class="traning__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать
+        эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
+      <img src="" alt="" class="traning__image">
+      <ul class="traning__link-list">
+        <li class="traning__link-item"><a href="https://www.strava.com" class="traning__link">Strava</a></li>
+        <li class="traning__link-item"><a href="https://www.komoot.com" class="traning__link">Komoot</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2 class="footer__title">Подпишитесь на&nbsp;рассылку &mdash;</h2>
+    <form name="email-submit" method="POST" action="url" class="footer__form">
+      <fieldset class="footer__input-container">
+        <input type="email" placeholder="Ваш e-mail" class="footer__input-email" required>
+        <button type="submit" class="footer__input-submit">ok</button>
+      </fieldset>
+    </form>
+    <p class="footer__author">&copy;&nbsp;Road Club 2021</p>
+    <button type="button" class="theme-button footer__theme-button"></button>
+  </footer>
   <script src="scripts/index.js"></script>
 </body>
 
