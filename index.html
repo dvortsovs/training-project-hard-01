@@ -13,9 +13,10 @@
   <header class="header">
     <nav class="header__nav">
       <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="#" class="header__nav-link">Покрытия и градиенты</a></li>
-        <li class="header__nav-item"><a href="#" class="header__nav-link">Велосипеды</a></li>
-        <li class="header__nav-item"><a href="#" class="header__nav-link">Тренировки</a></li>
+        <li class="header__nav-item"><button type="button" href="#" class="header__nav-button">Покрытия и
+            градиенты</button></li>
+        <li class="header__nav-item"><button type="button" href="#" class="header__nav-button">Велосипеды</button></li>
+        <li class="header__nav-item"><button type="button" href="#" class="header__nav-button">Тренировки</button></li>
       </ul>
     </nav>
   </header>
@@ -24,7 +25,7 @@
       <h1 class="first-screen__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
       <p class="first-screen__text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным
         маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
-      <button class="button first-screen__button">Подробнее</button>
+      <button type="button" class="button first-screen__button">Подробнее</button>
       <p class="first-screen__bicycle-title">Cannondale Systemsix</p>
       <div class="first-screen__bicycle"></div>
     </section>
@@ -115,7 +116,17 @@
       </ul>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <h2 class="footer__title">Подпишитесь на&nbsp;рассылку &mdash;</h2>
+    <form name="email-submit" method="POST" action="url" class="footer__form">
+      <fieldset class="footer__input-container">
+        <input type="email" placeholder="Ваш e-mail" class="footer__input-email" required>
+        <button type="submit" class="footer__input-submit">ok</button>
+      </fieldset>
+    </form>
+    <p class="footer__author">&copy;&nbsp;Road Club 2021</p>
+    <button type="button" class="theme-button footer__theme-button"></button>
+  </footer>
   <script src="scripts/index.js"></script>
 </body>
 
