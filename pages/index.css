@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -496,4 +497,51 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.note {
+  width: calc(100% - 240px);
+  margin: 110px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+
+.note__img {
+  grid-row: span 2;
+  width: 650px;
+  height: 460px;
+}
+
+.note__title {
+  max-width: 470px;
+  color: #151515;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.note__author {
+  max-width: 470px;
+  color: #151515;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  align-self: end;
+}
+
+.note__author::after {
+  color: #222;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 0.7;
+  display: block;
+  content: "Велогонщик";
 }/*# sourceMappingURL=index.css.map */
