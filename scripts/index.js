@@ -6,6 +6,17 @@ const roads = page.querySelector('.road-slider');
 const bicycles = page.querySelector('.bicycles');
 const traning = page.querySelector('.traning');
 
+const mySwiper = new Swiper('.road-slider', {
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 40,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+})
+
+
 function headerButtonLink(href) {
   href.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
