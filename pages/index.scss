@@ -4,9 +4,17 @@
 @import '../blocks/mixins.scss';
 
 @import '../blocks/page/page.scss';
+@import '../blocks/button/button.scss';
 @import '../blocks/header/header.scss';
 @import '../blocks/header/__nav/header__nav.scss';
 @import '../blocks/header/__nav-list/header__nav-list.scss';
 @import '../blocks/header/__nav-item/header__nav-item.scss';
 @import '../blocks/header/__nav-button/header__nav-button.scss';
 @import '../blocks/main/main.scss';
+@import '../blocks/first-screen/first-screen.scss';
+@import '../blocks/first-screen/__title/first-screen__title.scss';
+@import '../blocks/first-screen/__text/first-screen__text.scss';
+@import '../blocks/first-screen/__button/first-screen__button.scss';
+@import '../blocks/first-screen/__bicycle-title/first-screen__bicycle-title.scss';
+@import '../blocks/first-screen/__bicycle/first-screen__bicycle.scss';
+@import '../blocks/first-screen/__bicycle-img/first-screen__bicycle-img.scss';

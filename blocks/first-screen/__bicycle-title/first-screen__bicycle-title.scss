@@ -1,0 +1,15 @@
+.first-screen__bicycle-title {
+  position: relative;
+  margin: 167px 0 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $primaryColor;
+}
+.first-screen__bicycle-title::after {
+  content: url('../images/title-bicycles__after.svg');
+  position: absolute;
+  top: -4px;
+  left: 213px;
+}
