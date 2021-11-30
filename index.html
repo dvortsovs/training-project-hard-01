@@ -11,7 +11,7 @@
 
 <body class="page">
   <header class="header">
-    <nav class="header__nav">
+    <nav class="header__nav page__container">
       <ul class="header__nav-list">
         <li class="header__nav-item"><button type="button"
             class="header__nav-button header__nav-button_link_roads">Покрытия и
@@ -23,7 +23,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
+  <main class="main page__container">
     <section class="first-screen">
       <div class="first-screen__container">
         <h1 class="first-screen__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
@@ -126,15 +126,20 @@
     </section>
   </main>
   <footer class="footer">
-    <h2 class="footer__title">Подпишитесь на&nbsp;рассылку &mdash;</h2>
-    <form name="email-submit" method="POST" action="url" class="footer__form">
-      <fieldset class="footer__input-container">
-        <input type="email" placeholder="Ваш e-mail" class="footer__input-email" required>
-        <button type="submit" class="footer__input-submit">ok</button>
-      </fieldset>
-    </form>
-    <p class="footer__author">&copy;&nbsp;Road Club 2021</p>
-    <button type="button" class="theme-button footer__theme-button"></button>
+    <div class="footer__container page__container">
+      <h2 class="footer__title">Подпишитесь на рассылку &mdash;</h2>
+      <form name="email-submit" method="POST" action="url" class="footer__form">
+        <fieldset class="footer__input-container">
+          <input type="email" placeholder="Ваш e-mail" class="footer__input-email" required>
+          <button type="submit" class="footer__input-submit">ok</button>
+        </fieldset>
+      </form>
+      <p class="footer__author">&copy;&nbsp;Road Club 2021</p>
+      <label class="switcher">
+        <input class="switcher__checkbox" name="color-scheme" value="light" type="checkbox" checked>
+        <span class="switcher__slider"></span>
+      </label>
+    </div>
   </footer>
   <script src="scripts/swiper.js"></script>
   <script src="scripts/index.js"></script>

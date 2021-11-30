@@ -5,6 +5,7 @@
 @import '../blocks/mixins.scss';
 
 @import '../blocks/page/page.scss';
+@import '../blocks/page/__container/page__container.scss';
 @import '../blocks/button/button.scss';
 
 @import '../blocks/header/header.scss';
@@ -53,3 +54,16 @@
 @import '../blocks/traning/__link-list/traning__link-list.scss';
 @import '../blocks/traning/__link-item/traning__link-item.scss';
 @import '../blocks/traning/__link/traning__link.scss';
+
+@import '../blocks/footer/footer.scss';
+@import '../blocks/footer/__container/footer__container.scss';
+@import '../blocks/footer/__title/footer__title.scss';
+@import '../blocks/footer/__form/footer__form.scss';
+@import '../blocks/footer/__input-container/footer__input-container.scss';
+@import '../blocks/footer/__input-email/footer__input-email.scss';
+@import '../blocks/footer/__input-submit/footer__input-submit.scss';
+@import '../blocks/footer/__author/footer__author.scss';
+
+@import '../blocks/switcher/switcher.scss';
+@import '../blocks/switcher/__checkbox/switcher__checkbox.scss';
+@import '../blocks/switcher/__slider/switcher__slider.scss';

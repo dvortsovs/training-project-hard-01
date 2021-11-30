@@ -1,0 +1,20 @@
+.switcher {
+  position: absolute;
+  bottom: 68px;
+  right: 164px;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+.switcher::before {
+  position: absolute;
+  top: -2px;
+  left: -50px;
+  content: url('../images/switcher__sun.svg');
+}
+.switcher::after {
+  position: absolute;
+  top: 0;
+  left: 65px;
+  content: url('../images/switcher__moon.svg');
+}

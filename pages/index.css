@@ -1079,10 +1079,13 @@ button.swiper-pagination-bullet {
   font-weight: 700;
 }
 .page {
-  max-width: 1440px;
-  margin: 0 auto;
   font-family: "Inter", "Arial", sans-serif;
   background-color: #f4f4f4;
+}
+
+.page__container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header {
@@ -1093,10 +1096,15 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 74px;
   background-color: #f4f4f4;
+  z-index: 99;
+}
+
+.header__nav {
+  width: 100%;
+  height: 74px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  z-index: 99;
 }
 
 .header__nav-list {
@@ -1178,7 +1186,7 @@ button.swiper-pagination-bullet {
   background-image: linear-gradient(90deg, #319E75 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
-  transition: background 900ms ease-in-out;
+  transition: background 500ms ease-in-out;
 }
 
 .first-screen__button:hover {
@@ -1403,7 +1411,7 @@ button.swiper-pagination-bullet {
 
 .traning {
   width: calc(100% - 240px);
-  margin: 0 auto;
+  margin: 0 auto 120px;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 60px -webkit-min-content -webkit-min-content;
@@ -1457,4 +1465,172 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
+}
+
+.footer {
+  position: relative;
+  background-color: #efefef;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.footer__title {
+  color: #151515;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  max-width: 229px;
+  margin: 0 0 0 120px;
+}
+
+.footer__form {
+  margin: 50px 0 0 120px;
+  padding: 0;
+}
+
+.footer__input-container {
+  width: 360px;
+  height: 50px;
+  box-sizing: border-box;
+  border: solid 1px #c7c7c7;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__input-email {
+  width: 100%;
+  background-color: #efefef;
+  border: none;
+  margin: 0;
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #222;
+  opacity: 0.7;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer__input-email:hover::-moz-placeholder {
+  opacity: 1;
+  color: #151515;
+}
+
+.footer__input-email:hover:-ms-input-placeholder {
+  opacity: 1;
+  color: #151515;
+}
+
+.footer__input-email:hover::placeholder {
+  opacity: 1;
+  color: #151515;
+}
+
+.footer__input-email:focus {
+  color: #151515;
+  opacity: 1;
+  cursor: text;
+}
+
+.footer__input-email:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.footer__input-email:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.footer__input-email:focus::placeholder {
+  color: transparent;
+}
+
+.footer__input-email:focus + .footer__input-submit {
+  display: block;
+}
+
+.footer__input-submit {
+  background-color: #efefef;
+  border: none;
+  text-transform: lowercase;
+  color: #151515;
+  font-size: 13px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.footer__author {
+  margin: 100px 0 0 120px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #cfcfcf;
+}
+
+.switcher {
+  position: absolute;
+  bottom: 68px;
+  right: 164px;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.switcher::before {
+  position: absolute;
+  top: -2px;
+  left: -50px;
+  content: url("../images/switcher__sun.svg");
+}
+
+.switcher::after {
+  position: absolute;
+  top: 0;
+  left: 65px;
+  content: url("../images/switcher__moon.svg");
+}
+
+.switcher__checkbox {
+  display: none;
+}
+
+.switcher__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 9999px;
+}
+
+.switcher__slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #24B47E;
+  transition: 0.4s;
+  border-radius: 100%;
+}
+
+.switcher__checkbox:checked + .switcher__slider {
+  background-color: #545454;
+}
+
+.switcher__checkbox:checked + .switcher__slider:before {
+  transform: translateX(20px);
 }/*# sourceMappingURL=index.css.map */
