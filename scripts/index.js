@@ -37,11 +37,6 @@ const mySwiperBicycles = new Swiper('.bicycles', {
   },
 })
 
-function headerButtonLink(href) {
-  const target = href.getBoundingClientRect().top + window.pageYOffset - 94;
-  window.scrollTo({ top: target, behavior: "smooth"});
-}
-
 function switchTheme() {
 
   if (themeSwitch.checked) {
@@ -60,8 +55,7 @@ else {
   themeSwitch.checked = false;
 }
 
-roadsButton.addEventListener('click', () => headerButtonLink(roads));
-bicyclesButton.addEventListener('click', () => headerButtonLink(bicycles));
-traningButton.addEventListener('click', () => headerButtonLink(traning));
 moreButton.addEventListener('click', () => headerButtonLink(note));
 themeSwitch.addEventListener('change', switchTheme, false);
+
+

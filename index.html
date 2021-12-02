@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="document">
 
 <head>
   <meta charset="UTF-8">
@@ -15,13 +15,10 @@
   <header class="header">
     <nav class="header__nav page__container">
       <ul class="header__nav-list">
-        <li class="header__nav-item"><button type="button"
-            class="header__nav-button header__nav-button_link_roads">Покрытия и
-            градиенты</button></li>
-        <li class="header__nav-item"><button type="button"
-            class="header__nav-button header__nav-button_link_bicycles">Велосипеды</button></li>
-        <li class="header__nav-item"><button type="button"
-            class="header__nav-button header__nav-button_link_traning">Тренировки</button></li>
+        <li class="header__nav-item"><a href="#road-slider" class="header__nav-button header__nav-button_link_roads">Покрытия и
+            градиенты</a></li>
+        <li class="header__nav-item"><a href="#bicycles" class="header__nav-button header__nav-button_link_bicycles">Велосипеды</a></li>
+        <li class="header__nav-item"><a href="#traning" class="header__nav-button header__nav-button_link_traning">Тренировки</a></li>
       </ul>
     </nav>
   </header>
@@ -31,35 +28,39 @@
         <h1 class="first-screen__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
         <p class="first-screen__text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным
           маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
-        <button type="button" class="first-screen__button">Подробнее</button>
+        <a href="#note" class="first-screen__button">Подробнее</a>
         <p class="first-screen__bicycle-title">Cannondale Systemsix</p>
       </div>
       <figure class="first-screen__bicycle">
-        <img src="./images/Cannondale-Systemsix-Himod.png" alt="Cannondale Systemsix Himod" class="first-screen__bicycle-img">
+        <img src="./images/Cannondale-Systemsix-Himod.png" alt="Cannondale Systemsix Himod"
+          class="first-screen__bicycle-img">
       </figure>
     </section>
-    <section class="note">
+    <section class="note" id="note">
       <img src="./images/note__img.jpg" alt="Видовое фото" class="note__img">
       <h2 class="note__title">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&ndash;
         но&nbsp;катайся&raquo;</h2>
       <p class="note__author">Эдди Меркс</p>
     </section>
-    <section class="road-slider swiper">
+    <section class="road-slider swiper" id="road-slider">
       <h2 class="road-slider__title">Шоссе</h2>
       <p class="road-slider__text">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах:
         будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно
         и&nbsp;самостоятельно.</p>
       <ul class="road-slider__slider swiper-wrapper">
-        <li class="road-slider__slide swiper-slide"><img src="./images/road__highway.jpg" alt="фото шоссе" class="roar-slider__image"></li>
-        <li class="road-slider__slide swiper-slide"><img src="./images/road__gravel.jpg" alt="фото грэвел" class="roar-slider__image"></li>
-        <li class="road-slider__slide swiper-slide"><img src="./images/road__tt.jpg" alt="фото тт" class="roar-slider__image"></li>
+        <li class="road-slider__slide swiper-slide"><img src="./images/road__highway.jpg" alt="фото шоссе"
+            class="roar-slider__image"></li>
+        <li class="road-slider__slide swiper-slide"><img src="./images/road__gravel.jpg" alt="фото грэвел"
+            class="roar-slider__image"></li>
+        <li class="road-slider__slide swiper-slide"><img src="./images/road__tt.jpg" alt="фото тт"
+            class="roar-slider__image"></li>
       </ul>
       <div class="road-slider__nav-container">
         <div class="road-slider__nav road-slider__nav_prev swiper-button-prev"></div>
         <div class="road-slider__nav road-slider__nav_next swiper-button-next"></div>
       </div>
     </section>
-    <section class="bicycles swiper">
+    <section class="bicycles swiper" id="bicycles">
       <h2 class="bicycles__title">Велосипеды</h2>
       <div class="bicycles__road swiper-pagination"></div>
       <ul class="bicycles__slider swiper-wrapper">
@@ -71,7 +72,8 @@
           </a>
           <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
             class="bicycles__bike">
-            <img src="./images/bicycles__Cannondale-Systemsix-Himod.png" alt="Cannondale-Systemsix-Himod" class="bicycles__bike-image">
+            <img src="./images/bicycles__Cannondale-Systemsix-Himod.png" alt="Cannondale-Systemsix-Himod"
+              class="bicycles__bike-image">
             <p class="bicycles__bike-title">Cannondale Systemsix Himod</p>
           </a>
           <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
@@ -88,19 +90,22 @@
           </a>
           <a href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9"
             class="bicycles__bike">
-            <img src="./images/Specialized-S-Works-Diverge.png" alt="Specialized-S-Works-Diverge" class="bicycles__bike-image">
+            <img src="./images/Specialized-S-Works-Diverge.png" alt="Specialized-S-Works-Diverge"
+              class="bicycles__bike-image">
             <p class="bicycles__bike-title">Specialized S-Works Diverge</p>
           </a>
           <a href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8"
             class="bicycles__bike">
-            <img src="./images/Cannondale-Topstone-Lefty-3.png" alt="Cannondale-Topstone-Lefty-3" class="bicycles__bike-image">
+            <img src="./images/Cannondale-Topstone-Lefty-3.png" alt="Cannondale-Topstone-Lefty-3"
+              class="bicycles__bike-image">
             <p class="bicycles__bike-title">Cannondale Topstone Lefty 3</p>
           </a>
         </li>
         <li class="bicycles__slide bicycles__slide_tt swiper-slide">
           <a href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
             class="bicycles__bike">
-            <img src="./images/Specialized-S-Works-Shiv.png" alt="Specialized-S-Works-Shiv" class="bicycles__bike-image">
+            <img src="./images/Specialized-S-Works-Shiv.png" alt="Specialized-S-Works-Shiv"
+              class="bicycles__bike-image">
             <p class="bicycles__bike-title">Specialized S-Works Shiv</p>
           </a>
           <a href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835"
@@ -116,7 +121,7 @@
         </li>
       </ul>
     </section>
-    <section class="traning">
+    <section class="traning" id="traning">
       <h2 class="traning__title">Тренировки</h2>
       <p class="traning__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать
         эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
