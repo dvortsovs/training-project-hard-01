@@ -1,8 +1,8 @@
 .footer__input-submit {
-  background-color: $backFooter;
+  background-color: var(--backFooter);
   border: none;
   text-transform: lowercase;
-  color: $primaryColor;
+  color: var(--primaryColor);
   font-size: 13px;
   line-height: 28px;
   font-weight: 500;

@@ -676,7 +676,7 @@ template {
   /* background: var(--swiper-pagination-bullet-inactive-color, #000); */
   /* opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2); */
   opacity: 0.7;
-  color: #222;
+  color: var(--secondaryColor);
   margin: 0 40px 0 0;
 }
 
@@ -707,7 +707,7 @@ button.swiper-pagination-bullet {
   /* background: var(--swiper-pagination-color, var(--swiper-theme-color)); */
   font-weight: 600;
   opacity: 1;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets,
@@ -1078,9 +1078,17 @@ button.swiper-pagination-bullet {
   src: url("../vendor/fonts/Inter-Bold.woff2") format("woff2"), url("../vendor/fonts/Inter-Bold.woff") format("woff");
   font-weight: 700;
 }
+:root {
+  --buttonColor: #24B47E;
+  --buttonHoverColor: #319E75;
+  --oterColor: #545454;
+  --whiteColor: #fff;
+  --thirdColor: #c4c4c4;
+}
+
 .page {
   font-family: "Inter", "Arial", sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--backBody);
 }
 
 .page__container {
@@ -1095,7 +1103,7 @@ button.swiper-pagination-bullet {
   right: 0;
   width: 100%;
   height: 74px;
-  background-color: #f4f4f4;
+  background-color: var(--backBody);
   z-index: 99;
 }
 
@@ -1125,11 +1133,11 @@ button.swiper-pagination-bullet {
 
 .header__nav-button {
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
-  color: #151515;
+  color: var(--primaryColor);
   margin: 0;
 }
 
@@ -1138,7 +1146,7 @@ button.swiper-pagination-bullet {
   margin-top: 10px;
   width: 100%;
   height: 856px;
-  background-color: #f4f4f4;
+  background-color: var(--backBody);
   background-image: url("../images/first-screen__background.jpg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -1157,7 +1165,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: -0.5px;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .first-screen__text {
@@ -1167,23 +1175,23 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  color: #222;
+  color: var(--secondaryColor);
   opacity: 0.7;
 }
 
 .first-screen__button {
   position: relative;
-  background-color: #24B47E;
+  background-color: var(--buttonColor);
   border-radius: 4px;
   border: none;
-  color: #fff;
+  color: var(--whiteColor);
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 1px;
   width: 180px;
   height: 50px;
   margin: 50px 0 0;
-  background-image: linear-gradient(90deg, #319E75 50%, transparent 50%);
+  background-image: linear-gradient(90deg, var(--buttonHoverColor) 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
   transition: background 500ms ease-in-out;
@@ -1200,7 +1208,7 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .first-screen__bicycle-title::after {
@@ -1244,7 +1252,7 @@ button.swiper-pagination-bullet {
 
 .note__title {
   max-width: 470px;
-  color: #151515;
+  color: var(--primaryColor);
   font-size: 34px;
   line-height: 44px;
   letter-spacing: -0.5px;
@@ -1255,7 +1263,7 @@ button.swiper-pagination-bullet {
 
 .note__author {
   max-width: 470px;
-  color: #151515;
+  color: var(--primaryColor);
   font-size: 20px;
   line-height: 32px;
   font-weight: 500;
@@ -1265,7 +1273,7 @@ button.swiper-pagination-bullet {
 }
 
 .note__author::after {
-  color: #222;
+  color: var(--secondaryColor);
   font-size: 16px;
   line-height: 28px;
   opacity: 0.7;
@@ -1285,7 +1293,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: -0.5px;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .road-slider__text {
@@ -1295,7 +1303,7 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  color: #222;
+  color: var(--secondaryColor);
   opacity: 0.7;
 }
 
@@ -1328,11 +1336,11 @@ button.swiper-pagination-bullet {
 }
 
 .road-slider__nav {
-  background-color: #ebebeb;
+  background-color: var(--fifthColor);
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  color: #151515;
+  color: var(--primaryColor);
   position: static;
   display: flex;
 }
@@ -1355,7 +1363,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: -0.5px;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .bicycles__road {
@@ -1406,7 +1414,7 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .traning {
@@ -1428,7 +1436,7 @@ button.swiper-pagination-bullet {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: -0.5px;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .traning__text {
@@ -1438,7 +1446,7 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  color: #222;
+  color: var(--secondaryColor);
   opacity: 0.7;
   grid-column-start: 1;
 }
@@ -1461,7 +1469,7 @@ button.swiper-pagination-bullet {
 
 .traning__link {
   text-decoration: none;
-  color: #151515;
+  color: var(--primaryColor);
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
@@ -1469,13 +1477,13 @@ button.swiper-pagination-bullet {
 
 .footer {
   position: relative;
-  background-color: #efefef;
+  background-color: var(--backFooter);
   padding-top: 80px;
   padding-bottom: 60px;
 }
 
 .footer__title {
-  color: #151515;
+  color: var(--primaryColor);
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
@@ -1503,14 +1511,14 @@ button.swiper-pagination-bullet {
 
 .footer__input-email {
   width: 100%;
-  background-color: #efefef;
+  background-color: var(--backFooter);
   border: none;
   margin: 0;
   margin-left: 20px;
   font-size: 13px;
   font-weight: 500;
   line-height: 28px;
-  color: #222;
+  color: var(--secondaryColor);
   opacity: 0.7;
   outline: none;
   cursor: pointer;
@@ -1518,21 +1526,21 @@ button.swiper-pagination-bullet {
 
 .footer__input-email:hover::-moz-placeholder {
   opacity: 1;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .footer__input-email:hover:-ms-input-placeholder {
   opacity: 1;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .footer__input-email:hover::placeholder {
   opacity: 1;
-  color: #151515;
+  color: var(--primaryColor);
 }
 
 .footer__input-email:focus {
-  color: #151515;
+  color: var(--primaryColor);
   opacity: 1;
   cursor: text;
 }
@@ -1554,10 +1562,10 @@ button.swiper-pagination-bullet {
 }
 
 .footer__input-submit {
-  background-color: #efefef;
+  background-color: var(--backFooter);
   border: none;
   text-transform: lowercase;
-  color: #151515;
+  color: var(--primaryColor);
   font-size: 13px;
   line-height: 28px;
   font-weight: 500;
@@ -1573,7 +1581,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
-  color: #cfcfcf;
+  color: var(--fourthColor);
 }
 
 .switcher {
@@ -1610,7 +1618,7 @@ button.swiper-pagination-bullet {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: var(--whiteColor);
   transition: 0.4s;
   border-radius: 9999px;
 }
@@ -1622,13 +1630,13 @@ button.swiper-pagination-bullet {
   width: 20px;
   left: 2px;
   bottom: 2px;
-  background-color: #24B47E;
+  background-color: var(--buttonColor);
   transition: 0.4s;
   border-radius: 100%;
 }
 
 .switcher__checkbox:checked + .switcher__slider {
-  background-color: #545454;
+  background-color: var(--oterColor);
 }
 
 .switcher__checkbox:checked + .switcher__slider:before {

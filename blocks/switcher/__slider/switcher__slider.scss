@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: var(--whiteColor);
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 9999px;
@@ -17,13 +17,13 @@
   width: 20px;
   left: 2px;
   bottom: 2px;
-  background-color: $buttonColor;
+  background-color: var(--buttonColor);
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 100%;
 }
 .switcher__checkbox:checked + .switcher__slider {
-  background-color: #545454;
+  background-color: var(--oterColor);
 }
 .switcher__checkbox:checked + .switcher__slider:before {
   transform: translateX(20px);
