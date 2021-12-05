@@ -11,7 +11,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 .bicycles__bike:last-of-type {
   margin: 0;
+}
+@media screen and (max-width: 720px) {
+  .bicycles__bike {
+    width: 284px;
+    height: 306px;
+  }
 }

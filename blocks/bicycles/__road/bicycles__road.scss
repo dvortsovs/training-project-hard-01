@@ -6,3 +6,8 @@
   margin-top: auto;
   margin-right: 120px;
 }
+@media screen and (max-width: 720px) {
+  .bicycles__road {
+    display: none;
+  }
+}

@@ -69,67 +69,85 @@
         <div class="road-slider__nav road-slider__nav_next swiper-button-next"></div>
       </div>
     </section>
-    <!-- <section class="bicycles swiper" id="bicycles">
+    <section class="bicycles" id="bicycles">
       <h2 class="bicycles__title">Велосипеды</h2>
-      <div class="bicycles__road swiper-pagination"></div>
-      <ul class="bicycles__slider swiper-wrapper">
-        <li class="bicycles__slide bicycles__slide_highway swiper-slide">
-          <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN "
-            class="bicycles__bike">
-            <img src="./images/Cervelo-Caledonia-5.png" alt="Cervelo-Caledonia-5" class="bicycles__bike-image">
-            <p class="bicycles__bike-title">Cervelo Caledonia-5</p>
-          </a>
-          <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
-            class="bicycles__bike">
-            <img src="./images/bicycles__Cannondale-Systemsix-Himod.png" alt="Cannondale-Systemsix-Himod"
-              class="bicycles__bike-image">
-            <p class="bicycles__bike-title">Cannondale Systemsix Himod</p>
-          </a>
-          <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
-            class="bicycles__bike">
-            <img src="./images/Trek-Domane-SL-7.png" alt="Trek-Domane-SL-7" class="bicycles__bike-image">
-            <p class="bicycles__bike-title">Trek Domane SL-7</p>
-          </a>
+      <div class="bicycles__break"></div>
+      <select onchange="
+      document.querySelector('.bicycles__slide-container_visible').classList.remove('bicycles__slide-container_visible');
+      document.querySelectorAll('.bicycles__slide')[this.selectedIndex].classList.add('bicycles__slide-container_visible')
+      " class="bicycles__select" name="select" id="select">
+        <option class="bicycles__option" selected value="0">Шоссе</option>
+        <option class="bicycles__option" value="1">Грэвел</option>
+        <option class="bicycles__option" value="2">ТТ</option>
+      </select>
+      <div class="bicycles__road"></div>
+      <ul class="bicycles__slider">
+        <li class="bicycles__slide bicycles__slide-container_visible bicycles__slide_highway">
+          <div class="bicycles__slide-container">
+            <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN "
+              class="bicycles__bike">
+              <img src="./images/Cervelo-Caledonia-5.png" alt="Cervelo-Caledonia-5" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cervelo Caledonia-5</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+              class="bicycles__bike">
+              <img src="./images/bicycles__Cannondale-Systemsix-Himod.png" alt="Cannondale-Systemsix-Himod"
+                class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cannondale Systemsix Himod</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+              class="bicycles__bike">
+              <img src="./images/Trek-Domane-SL-7.png" alt="Trek-Domane-SL-7" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Trek Domane SL-7</p>
+            </a>
+          </div>
+
         </li>
-        <li class="bicycles__slide bicycles__slide_graval swiper-slide">
-          <a href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE"
-            class="bicycles__bike">
-            <img src="./images/Cervelo-Aspero-GRX-810.png" alt="Cervelo-Aspero-GRX-810" class="bicycles__bike-image">
-            <p class="bicycles__bike-title">Cervelo Aspero GRX 810</p>
-          </a>
-          <a href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9"
-            class="bicycles__bike">
-            <img src="./images/Specialized-S-Works-Diverge.png" alt="Specialized-S-Works-Diverge"
-              class="bicycles__bike-image">
-            <p class="bicycles__bike-title">Specialized S-Works Diverge</p>
-          </a>
-          <a href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8"
-            class="bicycles__bike">
-            <img src="./images/Cannondale-Topstone-Lefty-3.png" alt="Cannondale-Topstone-Lefty-3"
-              class="bicycles__bike-image">
-            <p class="bicycles__bike-title">Cannondale Topstone Lefty 3</p>
-          </a>
+        <li class="bicycles__slide bicycles__slide_graval">
+          <div class="bicycles__slide-container">
+            <a href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE"
+              class="bicycles__bike">
+              <img src="./images/Cervelo-Aspero-GRX-810.png" alt="Cervelo-Aspero-GRX-810" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cervelo Aspero GRX 810</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9"
+              class="bicycles__bike">
+              <img src="./images/Specialized-S-Works-Diverge.png" alt="Specialized-S-Works-Diverge"
+                class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Specialized S-Works Diverge</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8"
+              class="bicycles__bike">
+              <img src="./images/Cannondale-Topstone-Lefty-3.png" alt="Cannondale-Topstone-Lefty-3"
+                class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cannondale Topstone Lefty 3</p>
+            </a>
+          </div>
+
         </li>
-        <li class="bicycles__slide bicycles__slide_tt swiper-slide">
-          <a href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
-            class="bicycles__bike">
-            <img src="./images/Specialized-S-Works-Shiv.png" alt="Specialized-S-Works-Shiv"
-              class="bicycles__bike-image">
-            <p class="bicycles__bike-title">Specialized S-Works Shiv</p>
-          </a>
-          <a href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835"
-            class="bicycles__bike">
-            <img src="./images/BMC-Timemachine-01-ONE.png" alt="BMC-Timemachine-01-ONE" class="bicycles__bike-image">
-            <p class="bicycles__bike-title">BMC Timemachine 01 ONE</p>
-          </a>
-          <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q"
-            class="bicycles__bike">
-            <img src="./images/Cervelo-P-Series.png" alt="Cervelo-P-Series" class="bicycles__bike-image">
-            <p class="bicycles__bike-title">Cervelo P-Series</p>
-          </a>
+        <li class="bicycles__slide bicycles__slide_tt">
+          <div class="bicycles__slide-container">
+            <a href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
+              class="bicycles__bike">
+              <img src="./images/Specialized-S-Works-Shiv.png" alt="Specialized-S-Works-Shiv"
+                class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Specialized S-Works Shiv</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835"
+              class="bicycles__bike">
+              <img src="./images/BMC-Timemachine-01-ONE.png" alt="BMC-Timemachine-01-ONE" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">BMC Timemachine 01 ONE</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q"
+              class="bicycles__bike">
+              <img src="./images/Cervelo-P-Series.png" alt="Cervelo-P-Series" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cervelo P-Series</p>
+            </a>
+          </div>
+
         </li>
       </ul>
-    </section> -->
+    </section>
     <!-- <section class="traning" id="traning">
       <h2 class="traning__title">Тренировки</h2>
       <p class="traning__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать

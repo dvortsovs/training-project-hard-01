@@ -1,0 +1,14 @@
+.bicycles__option {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .bicycles__option {
+    display: block;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 400;
+    color: var(--primaryColor);
+    background-color: var(--backBody);
+    font-family: 'Inter';
+  }
+}

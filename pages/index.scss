@@ -45,9 +45,15 @@
 
 @import '../blocks/bicycles/bicycles.scss';
 @import '../blocks/bicycles/__title/bicycles__title.scss';
+@import '../blocks/bicycles/__break/bicycles__break.scss';
+@import '../blocks/bicycles/__select/bicycles__select.scss';
+@import '../blocks/bicycles/__option/bicycles__option.scss';
 @import '../blocks/bicycles/__road/bicycles__road.scss';
 @import '../blocks/bicycles/__slider/bicycles__slider.scss';
 @import '../blocks/bicycles/__slide/bicycles__slide.scss';
+@import '../blocks/bicycles/__bike-image/bicycles__bike-image.scss';
+@import '../blocks/bicycles/__slide-container/bicycles__slide-container.scss';
+@import '../blocks/bicycles/__slide-container/bicycles__slide-container_visible.scss';
 @import '../blocks/bicycles/__bike/bicycles__bike.scss';
 @import '../blocks/bicycles/__bike-title/bicycles__bike-title.scss';
 
