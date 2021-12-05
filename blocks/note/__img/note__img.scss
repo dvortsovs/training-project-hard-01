@@ -3,3 +3,11 @@
   width: 650px;
   height: 460px;
 }
+@media screen and (max-width: 720px) {
+  .note__img {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    border-top: solid 1px #e3e3e3;
+  }
+}

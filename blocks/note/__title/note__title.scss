@@ -1,10 +1,18 @@
 .note__title {
   max-width: 470px;
-  color: $primaryColor;
+  color: var(--primaryColor);
   font-size: 34px;
   line-height: 44px;
   letter-spacing: -0.5px;
   font-weight: 600;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 720px) {
+  .note__title {
+    max-width: 284px;
+    margin: 40px 0 0;
+    font-size: 23px;
+    line-height: 29px;
+  }
 }

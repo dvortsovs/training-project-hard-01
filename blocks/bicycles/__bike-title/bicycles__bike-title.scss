@@ -5,6 +5,14 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
-  color: $primaryColor;
-
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+@media screen and (max-width: 720px) {
+.bicycles__bike-title {
+  font-size: 14px;
+  line-height: 18px;
+  position: static;
+  color: #151515;
+}
 }

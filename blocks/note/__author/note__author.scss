@@ -1,6 +1,6 @@
 .note__author {
   max-width: 470px;
-  color: $primaryColor;
+  color: var(--primaryColor);
   font-size: 20px;
   line-height: 32px;
   font-weight: 500;
@@ -9,10 +9,23 @@
   align-self: end;
 }
 .note__author::after {
-  color: $secondaryColor;
+  color: var(--secondaryColor);
   font-size: 16px;
   line-height: 28px;
   opacity: 0.7;
   display: block;
   content: 'Велогонщик';
+}
+@media screen and (max-width: 720px) {
+  .note__author {
+    margin: 40px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: auto;
+  }
+  .note__author::after {
+    font-size: 10px;
+    line-height: 16px;
+    margin: 4px 0 0;
+  }
 }

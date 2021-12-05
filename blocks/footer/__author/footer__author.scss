@@ -3,5 +3,10 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
-  color: $fourthColor;
+  color: var(--fourthColor);
+}
+@media screen and (max-width: 720px) {
+  .footer__author {
+    margin: 0;
+  }
 }

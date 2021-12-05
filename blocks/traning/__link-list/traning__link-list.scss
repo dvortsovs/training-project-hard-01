@@ -6,3 +6,10 @@
   gap: 30px;
   align-self: flex-end;
 }
+@media screen and (max-width: 720px) {
+  .traning__link-list {
+    order: 4;
+    margin: 40px 0 0;
+    align-self: flex-start;
+  }
+}

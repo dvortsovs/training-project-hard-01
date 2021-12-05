@@ -10,3 +10,8 @@
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 720px) {
+  .footer__input-container {
+    width: 284px;
+  }
+}

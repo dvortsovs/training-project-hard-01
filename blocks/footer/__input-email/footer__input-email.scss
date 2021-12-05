@@ -1,23 +1,23 @@
 .footer__input-email {
   width: 100%;
-  background-color: $backFooter;
+  background-color: var(--backFooter);
   border: none;
   margin: 0;
   margin-left: 20px;
   font-size: 13px;
   font-weight: 500;
   line-height: 28px;
-  color: $secondaryColor;
+  color: var(--secondaryColor);
   opacity: 0.7;
   outline: none;
   cursor: pointer;
 }
 .footer__input-email:hover::placeholder {
   opacity: 1;
-  color: $primaryColor;
+  color: var(--primaryColor);
 }
 .footer__input-email:focus {
-  color: $primaryColor;
+  color: var(--primaryColor);
   opacity: 1;
   cursor: text;
 }

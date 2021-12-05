@@ -1,0 +1,22 @@
+.bicycles__select {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  .bicycles__select {
+    display: block;
+    width: 114px;
+    height: 30px;
+    border: solid 1px #e3e3e3;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    background-color: transparent;
+    color: var(--primaryColor);
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 600;
+    padding: 8px 12px;
+    font-family: 'Inter';
+    cursor: pointer;
+  }
+}

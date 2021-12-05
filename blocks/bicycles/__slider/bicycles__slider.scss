@@ -3,4 +3,12 @@
   list-style-type: none;
   margin: 120px 0 254px;
   padding: 0 120px 0 120px;
+  min-width: 0;
+}
+@media screen and (max-width: 720px) {
+ .bicycles__slider {
+   margin: 20px auto 0;
+   padding: 0;
+   width: 284px;
+ }
 }

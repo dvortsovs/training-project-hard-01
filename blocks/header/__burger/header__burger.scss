@@ -1,0 +1,44 @@
+.header__burger {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primaryColor);
+  transition-duration: .25s;
+}
+.header__burger::before {
+  position: absolute;
+  content: ' ';
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primaryColor);
+  transition-duration: .25s;
+}
+.header__burger::after {
+  position: absolute;
+  content: ' ';
+  top: 16px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primaryColor);
+  transition-duration: .25s;
+}
+
+
+.header__checkbox:checked ~ .header__menu-btn .header__burger {
+  margin: 8px 0 0;
+  transform: rotate(45deg);
+}
+
+.header__checkbox:checked ~ .header__menu-btn .header__burger::before {
+  transform: rotate(0);
+  top: 0;
+}
+
+.header__checkbox:checked ~ .header__menu-btn .header__burger::after {
+  transform: rotate(90deg);
+  top: 0;
+}
