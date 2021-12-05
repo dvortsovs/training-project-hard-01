@@ -1911,8 +1911,18 @@ button.swiper-pagination-bullet {
   background-color: var(--backFooter);
   padding-top: 80px;
   padding-bottom: 60px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+@media screen and (max-width: 720px) {
+  .footer {
+    width: 100%;
+    margin: 60px auto 0;
+    padding-bottom: 0;
+    padding-top: 60px;
+  }
+}
 .footer__title {
   color: var(--primaryColor);
   font-size: 24px;
@@ -1922,11 +1932,24 @@ button.swiper-pagination-bullet {
   margin: 0 0 0 120px;
 }
 
+@media screen and (max-width: 720px) {
+  .footer__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 0 18px;
+    max-width: 284px;
+  }
+}
 .footer__form {
   margin: 50px 0 0 120px;
   padding: 0;
 }
 
+@media screen and (max-width: 720px) {
+  .footer__form {
+    margin: 40px 0 0 18px;
+  }
+}
 .footer__input-container {
   width: 360px;
   height: 50px;
@@ -1940,6 +1963,11 @@ button.swiper-pagination-bullet {
   align-items: center;
 }
 
+@media screen and (max-width: 720px) {
+  .footer__input-container {
+    width: 284px;
+  }
+}
 .footer__input-email {
   width: 100%;
   background-color: var(--backFooter);
@@ -2007,6 +2035,19 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
+.footer__contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 720px) {
+  .footer__contain {
+    display: flex;
+    margin: 90px auto 16px;
+    width: calc(100% - 36px);
+  }
+}
 .footer__author {
   margin: 100px 0 0 120px;
   font-size: 14px;
@@ -2015,11 +2056,18 @@ button.swiper-pagination-bullet {
   color: var(--fourthColor);
 }
 
+@media screen and (max-width: 720px) {
+  .footer__author {
+    margin: 0;
+  }
+}
 .switcher {
   position: relative;
   display: inline-block;
   width: 44px;
   height: 24px;
+  margin-right: 150px;
+  flex-shrink: 0;
 }
 
 .switcher::before {
@@ -2038,6 +2086,8 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 720px) {
   .switcher {
+    display: none;
+    margin: 0;
     margin-top: auto;
     margin-bottom: 38px;
   }

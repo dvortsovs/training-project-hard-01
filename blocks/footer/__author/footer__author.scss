@@ -5,3 +5,8 @@
   font-weight: 600;
   color: var(--fourthColor);
 }
+@media screen and (max-width: 720px) {
+  .footer__author {
+    margin: 0;
+  }
+}

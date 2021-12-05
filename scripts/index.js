@@ -12,7 +12,7 @@ const bicyclesSlide = page.querySelector('.bicycles__slide');
 const bicyclesPagination = page.querySelector('.bicycles__road');
 const traning = page.querySelector('.traning');
 const note = page.querySelector('.note');
-const themeSwitch = page.querySelector('.switcher__checkbox');
+const themeSwitch = page.querySelectorAll('.switcher__checkbox');
 const mediaDark = window.matchMedia('(prefers-color-scheme: dark)');
 const lightStyles = document.querySelector('link[rel=stylesheet][media*=prefers-color-scheme][media*=light]');
 const darkStyles = document.querySelector('link[rel=stylesheet][media*=prefers-color-scheme][media*=dark]');
@@ -30,26 +30,23 @@ const mySwiperRoad = new Swiper('.road-slider', {
   },
 })
 
-// const mySwiperBicycles = new Swiper('.bicycles', {
-//   loop: true,
-//   spaceBetween: 30,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//     renderBullet: function (index, className) {
-//       return '<span class="' + className + '">' + bullets[index] + "</span>";
-//     },
-//   },
-// })
-
 function switchTheme() {
-
-  if (themeSwitch.checked) {
-    darkStyles.media = 'all'
-    lightStyles.media = 'not all'
-  }else{
-    darkStyles.media = 'not all'
-    lightStyles.media = 'all'
+  if (windowWidth.matches) {
+    if (themeSwitch[0].checked) {
+      darkStyles.media = 'all'
+      lightStyles.media = 'not all'
+    } else {
+      darkStyles.media = 'not all'
+      lightStyles.media = 'all'
+    }
+  } else {
+    if (themeSwitch[1].checked) {
+      darkStyles.media = 'all'
+      lightStyles.media = 'not all'
+    } else {
+      darkStyles.media = 'not all'
+      lightStyles.media = 'all'
+    }
   }
 }
 
@@ -106,16 +103,28 @@ function changeBicycleSection() {
   }
 }
 
-if (mediaDark.matches) {
-  themeSwitch.checked = true;
-}
-else {
-  themeSwitch.checked = false;
+
+if (windowWidth.matches) {
+  if (mediaDark.matches) {
+    themeSwitch[0].checked = true;
+  }
+  else {
+    themeSwitch[0].checked = false;
+  }
+
+} else {
+  if (mediaDark.matches) {
+    themeSwitch[1].checked = true;
+  }
+  else {
+    themeSwitch[1].checked = false;
+  }
+
 }
 
-console.log(windowWidth)
+
 defineBicyclesClass();
 changeBicycleSection();
 moreButton.addEventListener('click', () => headerButtonLink(note));
-themeSwitch.addEventListener('change', switchTheme, false);
-// windowWidth.addEventListener('change', changeBicycleSection);
+themeSwitch[0].addEventListener('change', switchTheme, false);
+themeSwitch[1].addEventListener('change', switchTheme, false);

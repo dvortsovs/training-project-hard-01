@@ -6,3 +6,11 @@
   max-width: 229px;
   margin: 0 0 0 120px;
 }
+@media screen and (max-width: 720px) {
+  .footer__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 0 18px;
+    max-width: 284px;
+  }
+}
