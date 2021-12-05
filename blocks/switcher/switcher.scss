@@ -1,7 +1,5 @@
 .switcher {
-  position: absolute;
-  bottom: 68px;
-  right: 164px;
+  position: relative;
   display: inline-block;
   width: 44px;
   height: 24px;
@@ -17,4 +15,10 @@
   top: 0;
   left: 65px;
   content: url('../images/switcher__moon.svg');
+}
+@media screen and (max-width: 720px) {
+.switcher {
+  margin-top: auto;
+  margin-bottom: 38px;
+}
 }

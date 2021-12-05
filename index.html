@@ -13,13 +13,22 @@
 
 <body class="page">
   <header class="header">
+    <input type="checkbox" class="header__checkbox" id="header__checkbox">
+    <label class="header__menu-btn" for="header__checkbox"><span class="header__burger"></span></label>
     <nav class="header__nav page__container">
       <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="#road-slider" class="header__nav-button header__nav-button_link_roads">Покрытия и
+        <li class="header__nav-item"><a href="#road-slider"
+            class="header__nav-button header__nav-button_link_roads">Покрытия и
             градиенты</a></li>
-        <li class="header__nav-item"><a href="#bicycles" class="header__nav-button header__nav-button_link_bicycles">Велосипеды</a></li>
-        <li class="header__nav-item"><a href="#traning" class="header__nav-button header__nav-button_link_traning">Тренировки</a></li>
+        <li class="header__nav-item"><a href="#bicycles"
+            class="header__nav-button header__nav-button_link_bicycles">Велосипеды</a></li>
+        <li class="header__nav-item"><a href="#traning"
+            class="header__nav-button header__nav-button_link_traning">Тренировки</a></li>
       </ul>
+      <label class="switcher switcher_mobile">
+        <input class="switcher__checkbox switcher__checkbox_mobile" name="color-scheme" value="light" type="checkbox">
+        <span class="switcher__slider switcher__slider_mobile"></span>
+      </label>
     </nav>
   </header>
   <main class="main page__container">
@@ -36,7 +45,7 @@
           class="first-screen__bicycle-img">
       </figure>
     </section>
-    <section class="note" id="note">
+    <!-- <section class="note" id="note">
       <img src="./images/note__img.jpg" alt="Видовое фото" class="note__img">
       <h2 class="note__title">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&ndash;
         но&nbsp;катайся&raquo;</h2>
@@ -130,9 +139,9 @@
         <li class="traning__link-item"><a href="https://www.strava.com" class="traning__link">Strava</a></li>
         <li class="traning__link-item"><a href="https://www.komoot.com" class="traning__link">Komoot</a></li>
       </ul>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__container page__container">
       <h2 class="footer__title">Подпишитесь на рассылку &mdash;</h2>
       <form name="email-submit" method="POST" action="url" class="footer__form">
@@ -147,7 +156,7 @@
         <span class="switcher__slider"></span>
       </label>
     </div>
-  </footer>
+  </footer> -->
   <script src="scripts/swiper.js"></script>
   <script src="scripts/index.js"></script>
 </body>
