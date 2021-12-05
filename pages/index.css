@@ -1271,6 +1271,17 @@ button.swiper-pagination-bullet {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 720px) {
+  .first-screen {
+    height: calc(100vh - 74px);
+    background-size: 254px 348px;
+    background-position: top 160px right 0;
+    width: calc(100% - 36px);
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
 .first-screen__title {
   margin: 0;
   padding: 70px 0 0 0;
@@ -1282,6 +1293,14 @@ button.swiper-pagination-bullet {
   color: var(--primaryColor);
 }
 
+@media screen and (max-width: 720px) {
+  .first-screen__title {
+    font-size: 32px;
+    line-height: 40px;
+    padding: 40px 0 0;
+    max-width: 284px;
+  }
+}
 .first-screen__text {
   margin: 50px 0 0 0;
   padding: 0;
@@ -1293,6 +1312,13 @@ button.swiper-pagination-bullet {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 720px) {
+  .first-screen__text {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 428px 0 0;
+  }
+}
 .first-screen__button {
   display: flex;
   align-items: center;
@@ -1303,6 +1329,7 @@ button.swiper-pagination-bullet {
   border: none;
   color: var(--whiteColor);
   font-size: 14px;
+  font-weight: 600;
   line-height: 18px;
   letter-spacing: 1px;
   width: 180px;
@@ -1319,6 +1346,13 @@ button.swiper-pagination-bullet {
   background-position: 0;
 }
 
+@media screen and (max-width: 720px) {
+  .first-screen__button {
+    width: 100%;
+    height: 46px;
+    margin: 40px 0 0;
+  }
+}
 .first-screen__bicycle-title {
   position: relative;
   margin: 167px 0 0;
@@ -1336,6 +1370,15 @@ button.swiper-pagination-bullet {
   left: 213px;
 }
 
+@media screen and (max-width: 720px) {
+  .first-screen__bicycle-title {
+    display: none;
+  }
+
+  .first-screen__bicycle-title::after {
+    display: none;
+  }
+}
 .first-screen__bicycle {
   margin: 350px 370px 80px 0;
   padding: 0;
@@ -1352,6 +1395,19 @@ button.swiper-pagination-bullet {
   justify-content: center;
 }
 
+@media screen and (max-width: 720px) {
+  .first-screen__bicycle {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) {
+  .first-screen__bicycle-img {
+    width: 100%;
+    height: 100%;
+    padding: 11px 27px;
+    box-sizing: border-box;
+  }
+}
 .note {
   width: calc(100% - 240px);
   margin: 120px auto 0;
@@ -1763,4 +1819,14 @@ button.swiper-pagination-bullet {
 
 .switcher__checkbox:checked + .switcher__slider:before {
   transform: translateX(20px);
+}
+
+.switcher_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .switcher_mobile {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -8,3 +8,11 @@
   letter-spacing: -0.5px;
   color: var(--primaryColor);
 }
+@media screen and (max-width: 720px) {
+  .first-screen__title {
+    font-size: 32px;
+    line-height: 40px;
+    padding: 40px 0 0;
+    max-width: 284px;
+  }
+}

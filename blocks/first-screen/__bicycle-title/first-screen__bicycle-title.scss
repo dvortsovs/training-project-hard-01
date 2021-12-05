@@ -13,3 +13,11 @@
   top: -4px;
   left: 213px;
 }
+@media screen and (max-width: 720px) {
+  .first-screen__bicycle-title {
+    display: none;
+  }
+  .first-screen__bicycle-title::after {
+    display: none;
+  }
+}

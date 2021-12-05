@@ -13,3 +13,14 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 720px) {
+  .first-screen {
+    height: calc(100vh - 74px);
+    background-size: 254px 348px;
+    background-position: top 160px right 0;
+    width: calc(100% - 36px);
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
