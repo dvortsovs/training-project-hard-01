@@ -8,3 +8,11 @@
   letter-spacing: -0.5px;
   color: var(--primaryColor);
 }
+@media screen and (max-width: 720px) {
+  .traning__title {
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 284px;
+    order: 1;
+  }
+}

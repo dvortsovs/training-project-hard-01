@@ -6,3 +6,13 @@
   grid-template-rows: 60px min-content min-content;
   column-gap: 160px;
 }
+@media screen and (max-width: 720px) {
+  .traning {
+    width: calc(100% - 36px);
+    margin: 104px auto 0;
+    padding-top: 40px;
+    border-top: solid 1px #e3e3e3 ;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -9,3 +9,12 @@
   opacity: 0.7;
   grid-column-start: 1;
 }
+@media screen and (max-width: 720px) {
+  .traning__text {
+    order: 3;
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 284px;
+    margin: 40px 0 0;
+  }
+}
