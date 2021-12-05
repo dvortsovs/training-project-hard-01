@@ -8,3 +8,11 @@
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 720px) {
+  .note__title {
+    max-width: 284px;
+    margin: 40px 0 0;
+    font-size: 23px;
+    line-height: 29px;
+  }
+}

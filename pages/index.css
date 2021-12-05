@@ -1273,10 +1273,10 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 720px) {
   .first-screen {
-    height: calc(100vh - 74px);
+    height: auto;
+    width: calc(100% - 36px);
     background-size: 254px 348px;
     background-position: top 160px right 0;
-    width: calc(100% - 36px);
     flex-direction: column;
     margin: 0 auto;
     padding: 0;
@@ -1418,12 +1418,28 @@ button.swiper-pagination-bullet {
        column-gap: 80px;
 }
 
+@media screen and (max-width: 720px) {
+  .note {
+    width: calc(100% - 36px);
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .note__img {
   grid-row: span 2;
   width: 650px;
   height: 460px;
 }
 
+@media screen and (max-width: 720px) {
+  .note__img {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    border-top: solid 1px #e3e3e3;
+  }
+}
 .note__title {
   max-width: 470px;
   color: var(--primaryColor);
@@ -1435,6 +1451,14 @@ button.swiper-pagination-bullet {
   padding: 0;
 }
 
+@media screen and (max-width: 720px) {
+  .note__title {
+    max-width: 284px;
+    margin: 40px 0 0;
+    font-size: 23px;
+    line-height: 29px;
+  }
+}
 .note__author {
   max-width: 470px;
   color: var(--primaryColor);
@@ -1455,6 +1479,19 @@ button.swiper-pagination-bullet {
   content: "Велогонщик";
 }
 
+@media screen and (max-width: 720px) {
+  .note__author {
+    margin: 40px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: auto;
+  }
+
+  .note__author::after {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
 .road-slider {
   margin: 120px 0 0 120px;
 }

@@ -16,3 +16,15 @@
   display: block;
   content: 'Велогонщик';
 }
+@media screen and (max-width: 720px) {
+  .note__author {
+    margin: 40px 0 0;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: auto;
+  }
+  .note__author::after {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
