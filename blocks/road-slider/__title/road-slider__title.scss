@@ -8,3 +8,12 @@
   letter-spacing: -0.5px;
   color: var(--primaryColor);
 }
+@media screen and (max-width: 720px) {
+  .road-slider__title {
+    max-width: 108px;
+    font-size: 32px;
+    line-height: 40px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

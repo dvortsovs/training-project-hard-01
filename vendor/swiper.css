@@ -218,6 +218,14 @@
   font-variant: initial;
   line-height: 1;
 }
+@media screen and (max-width: 720px) {
+  .swiper-button-next:after,
+.swiper-button-prev:after {
+
+  font-size: 10px;
+
+}
+}
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   left: 10px;
