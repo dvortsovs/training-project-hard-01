@@ -1,0 +1,13 @@
+.bicycles__road {
+  position: static;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 120px;
+}
+@media screen and (max-width: 720px) {
+  .bicycles__road {
+    display: none;
+  }
+}

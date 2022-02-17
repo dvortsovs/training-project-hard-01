@@ -1,0 +1,18 @@
+.first-screen__title {
+  margin: 0;
+  padding: 70px 0 0 0;
+  max-width: 460px;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: var(--primaryColor);
+}
+@media screen and (max-width: 720px) {
+  .first-screen__title {
+    font-size: 32px;
+    line-height: 40px;
+    padding: 40px 0 0;
+    max-width: 284px;
+  }
+}

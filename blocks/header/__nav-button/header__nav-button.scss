@@ -1,0 +1,16 @@
+.header__nav-button {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--primaryColor);
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 720px) {
+  .header__nav-button {
+    font-size: 18px;
+  }
+}

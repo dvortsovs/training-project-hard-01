@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru" class="document">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="./pages/light.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="./pages/dark.css" media="(prefers-color-scheme: dark)">
+  <title>Bicycles</title>
+</head>
+
+<body class="page">
+  <header class="header">
+    <input type="checkbox" class="header__checkbox" id="header__checkbox">
+    <label class="header__menu-btn" for="header__checkbox"><span class="header__burger"></span></label>
+    <nav class="header__nav page__container">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a href="#road-slider"
+            class="header__nav-button header__nav-button_link_roads">Покрытия и
+            градиенты</a></li>
+        <li class="header__nav-item"><a href="#bicycles"
+            class="header__nav-button header__nav-button_link_bicycles">Велосипеды</a></li>
+        <li class="header__nav-item"><a href="#traning"
+            class="header__nav-button header__nav-button_link_traning">Тренировки</a></li>
+      </ul>
+      <label class="switcher switcher_mobile">
+        <input class="switcher__checkbox switcher__checkbox_mobile" name="color-scheme" value="light" type="checkbox">
+        <span class="switcher__slider switcher__slider_mobile"></span>
+      </label>
+    </nav>
+  </header>
+  <main class="main page__container">
+    <section class="first-screen">
+      <div class="first-screen__container">
+        <h1 class="first-screen__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
+        <p class="first-screen__text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным
+          маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
+        <a href="#note" class="first-screen__button">Подробнее</a>
+        <p class="first-screen__bicycle-title">Cannondale Systemsix</p>
+      </div>
+      <figure class="first-screen__bicycle">
+        <img src="./images/Cannondale-Systemsix-Himod.png" alt="Cannondale Systemsix Himod"
+          class="first-screen__bicycle-img">
+      </figure>
+    </section>
+    <section class="note" id="note">
+      <img src="./images/note__img.jpg" alt="Видовое фото" class="note__img">
+      <h2 class="note__title">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;&ndash;
+        но&nbsp;катайся&raquo;</h2>
+      <p class="note__author">Эдди Меркс</p>
+    </section>
+    <section class="road-slider swiper" id="road-slider">
+      <h2 class="road-slider__title">Шоссе</h2>
+      <p class="road-slider__text">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных градиентах:
+        будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно
+        и&nbsp;самостоятельно.</p>
+      <ul class="road-slider__slider swiper-wrapper">
+        <li class="road-slider__slide swiper-slide"><img src="./images/road__highway.jpg" alt="фото шоссе"
+            class="road-slider__image"></li>
+        <li class="road-slider__slide swiper-slide"><img src="./images/road__gravel.jpg" alt="фото грэвел"
+            class="road-slider__image"></li>
+        <li class="road-slider__slide swiper-slide"><img src="./images/road__tt.jpg" alt="фото тт"
+            class="road-slider__image"></li>
+      </ul>
+      <div class="road-slider__nav-container">
+        <div class="road-slider__nav road-slider__nav_prev swiper-button-prev"></div>
+        <div class="road-slider__nav road-slider__nav_next swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="bicycles" id="bicycles">
+      <h2 class="bicycles__title">Велосипеды</h2>
+      <div class="bicycles__break"></div>
+      <select onchange="
+      document.querySelector('.bicycles__slide-container_visible').classList.remove('bicycles__slide-container_visible');
+      document.querySelectorAll('.bicycles__slide')[this.selectedIndex].classList.add('bicycles__slide-container_visible')
+      " class="bicycles__select" name="select" id="select">
+        <option class="bicycles__option" selected value="0">Шоссе</option>
+        <option class="bicycles__option" value="1">Грэвел</option>
+        <option class="bicycles__option" value="2">ТТ</option>
+      </select>
+      <div class="bicycles__road"></div>
+      <ul class="bicycles__slider">
+        <li class="bicycles__slide bicycles__slide-container_visible bicycles__slide_highway">
+          <div class="bicycles__slide-container">
+            <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN "
+              class="bicycles__bike">
+              <img src="./images/Cervelo-Caledonia-5.png" alt="Cervelo-Caledonia-5" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cervelo Caledonia-5</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+              class="bicycles__bike">
+              <img src="./images/bicycles__Cannondale-Systemsix-Himod.png" alt="Cannondale-Systemsix-Himod"
+                class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cannondale Systemsix Himod</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+              class="bicycles__bike">
+              <img src="./images/Trek-Domane-SL-7.png" alt="Trek-Domane-SL-7" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Trek Domane SL-7</p>
+            </a>
+          </div>
+
+        </li>
+        <li class="bicycles__slide bicycles__slide_graval">
+          <div class="bicycles__slide-container">
+            <a href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE"
+              class="bicycles__bike">
+              <img src="./images/Cervelo-Aspero-GRX-810.png" alt="Cervelo-Aspero-GRX-810" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cervelo Aspero GRX 810</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9"
+              class="bicycles__bike">
+              <img src="./images/Specialized-S-Works-Diverge.png" alt="Specialized-S-Works-Diverge"
+                class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Specialized S-Works Diverge</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8"
+              class="bicycles__bike">
+              <img src="./images/Cannondale-Topstone-Lefty-3.png" alt="Cannondale-Topstone-Lefty-3"
+                class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cannondale Topstone Lefty 3</p>
+            </a>
+          </div>
+
+        </li>
+        <li class="bicycles__slide bicycles__slide_tt">
+          <div class="bicycles__slide-container">
+            <a href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
+              class="bicycles__bike">
+              <img src="./images/Specialized-S-Works-Shiv.png" alt="Specialized-S-Works-Shiv"
+                class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Specialized S-Works Shiv</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835"
+              class="bicycles__bike">
+              <img src="./images/BMC-Timemachine-01-ONE.png" alt="BMC-Timemachine-01-ONE" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">BMC Timemachine 01 ONE</p>
+            </a>
+            <a href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q"
+              class="bicycles__bike">
+              <img src="./images/Cervelo-P-Series.png" alt="Cervelo-P-Series" class="bicycles__bike-image">
+              <p class="bicycles__bike-title">Cervelo P-Series</p>
+            </a>
+          </div>
+
+        </li>
+      </ul>
+    </section>
+    <section class="traning" id="traning">
+      <h2 class="traning__title">Тренировки</h2>
+      <p class="traning__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать
+        эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
+      <img src="./images/traning__img.jpg" alt="фото природы" class="traning__image">
+      <ul class="traning__link-list">
+        <li class="traning__link-item"><a href="https://www.strava.com" class="traning__link">Strava</a></li>
+        <li class="traning__link-item"><a href="https://www.komoot.com" class="traning__link">Komoot</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container page__container">
+      <h2 class="footer__title">Подпишитесь на рассылку &mdash;</h2>
+      <form name="email-submit" method="POST" action="url" class="footer__form">
+        <fieldset class="footer__input-container">
+          <input type="email" placeholder="Ваш e-mail" class="footer__input-email" required>
+          <button type="submit" class="footer__input-submit">ok</button>
+        </fieldset>
+      </form>
+      <div class="footer__contain">
+        <p class="footer__author">&copy;&nbsp;Road Club 2021</p>
+        <label class="switcher">
+          <input class="switcher__checkbox" name="color-scheme" value="light" type="checkbox" checked>
+          <span class="switcher__slider"></span>
+        </label>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/swiper.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.bicycles {
+  margin: 120px 0 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+@media screen and (max-width: 720px) {
+  .bicycles {
+    margin: 80px auto 0;
+    width: calc(100% - 36px);
+    padding-top: 40px;
+    border-top: solid 1px #e3e3e3;
+    // flex-direction: column;
+  }
+}
